@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {Container, Navbar, Nav} from 'react-bootstrap';
 import { GiLaptop } from 'react-icons/gi';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import './styles.css'
 // import navIcon1 from '../assets/img/nav-icon1.svg';
 // import navIcon2 from '../assets/img/nav-icon2.svg';
 // import Container from 'react-bootstrap/Container';

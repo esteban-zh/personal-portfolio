@@ -5,7 +5,8 @@ import 'react-multi-carousel/lib/styles.css';
 import { FaHtml5, FaNodeJs, FaReact, FaGithub } from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'
 import { RiEnglishInput } from 'react-icons/ri'
-import colorSharp from '../assets/img/color-sharp.png'
+import colorSharp from '../../assets/img/color-sharp.png'
+import './styles.css'
 
 export const Skills = () => {
   

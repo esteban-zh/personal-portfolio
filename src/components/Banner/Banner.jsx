@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaArrowCircleRight } from 'react-icons/fa';
 // import headerImg from "../assets/img/header-img.svg";
-import headerImg from "../assets/img/photo-profile.jfif";
+import headerImg from "../../assets/img/photo-profile.jfif";
+import './styles.css'
 
 export const Banner = () => {
 
