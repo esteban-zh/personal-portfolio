@@ -45,7 +45,7 @@ export const NavBar = () => {
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
           </Nav>
           <span className='navbar-text'>
@@ -53,7 +53,7 @@ export const NavBar = () => {
                 <a href="#"><span>< FaLinkedinIn /></span></a>
                 <a href="#"><span><FaGithub /></span></a>
             </div>
-            <button className='vvd' onClick={() => console.log("conect button header")}>Contact me</button>
+            <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button className='vvd' href="#contact" onClick={() => console.log("conect button header")}>Contact me</button></Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -37,34 +37,34 @@ export const Skills = () => {
                 <Col>
                 <div className='skill-bx'>
                     <h2>
-                        skills
+                        Skills
                     </h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">
                         <div className='item'>
                             {/* <img src={} alt="Image" /> */}
-                            <span><FaHtml5 /></span>
+                            <span><FaHtml5  className='img' /></span>
                             <h5>HTML Y CSS</h5>
                         </div>
                         <div className='item'>
-                            <span><FaNodeJs /></span>
+                            <span><FaNodeJs  className='img' /></span>
                             <h5>Node js</h5>
                         </div>
                         <div className='item'>
-                            <span><FaReact /></span>
+                            <span><FaReact  className='img' /></span>
                             <h5>React js</h5>
                         </div>
                         <div className='item'>
-                            <span><SiJavascript /></span>
+                            <span><SiJavascript  className='img' /></span>
                             <h5>Javascript</h5>
                         </div>
                         <div className='item'>
-                            <span><FaGithub /></span>
+                            <span><FaGithub  className='img' /></span>
                             <h5>Git y Github</h5>
                         </div>
                         <div className='item'>
-                            <span><RiEnglishInput /></span>
-                            <h5>English upper-intermediate B2 </h5>
+                            <span><RiEnglishInput  className='img' /></span>
+                            <h5>English B2 </h5>
                         </div>
                     </Carousel>
                 </div>

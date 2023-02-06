@@ -1,0 +1,33 @@
+/************ Projects Css ************/
+.project {
+    padding: 40px 0;
+    position: relative;
+    /* background-color: transparent; */
+}
+
+.project h2 {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.project p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 56%;
+}
+
+.background-image-right {
+    top: -50%;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    /* right: 0; */
+    left: 0;
+    z-index: -4;
+}
+
