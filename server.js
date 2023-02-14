@@ -12,7 +12,7 @@ app.use("/", router);
 app.listen(5000, () => console.log("SERVER RUNNING...."));
 
 mailchimp.setConfig({
-  apiKey: "c2ff2f2c9177035a44294c1dea5aeb10-us21",
+  apiKey: REACT_APP_MAILCHIMP_API_KEY,
   server: "us21",
 });
 
