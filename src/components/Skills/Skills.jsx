@@ -2,7 +2,7 @@ import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { FaHtml5, FaNodeJs, FaReact, FaGithub } from 'react-icons/fa'
+import { FaHtml5, FaNodeJs, FaReact, FaGithub, FaCss3 } from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'
 import { RiEnglishInput } from 'react-icons/ri'
 import colorSharp from '../../assets/img/color-sharp.png'
@@ -42,9 +42,12 @@ export const Skills = () => {
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">
                         <div className='item'>
-                            {/* <img src={} alt="Image" /> */}
                             <span><FaHtml5  className='img' /></span>
-                            <h5>HTML Y CSS</h5>
+                            <h5>HTML</h5>
+                        </div>
+                        <div className='item'>
+                            <span><FaCss3  className='img' /></span>
+                            <h5>CSS</h5>
                         </div>
                         <div className='item'>
                             <span><FaNodeJs  className='img' /></span>
@@ -64,7 +67,7 @@ export const Skills = () => {
                         </div>
                         <div className='item'>
                             <span><RiEnglishInput  className='img' /></span>
-                            <h5>English B2 </h5>
+                            <h5>English C1 </h5>
                         </div>
                     </Carousel>
                 </div>

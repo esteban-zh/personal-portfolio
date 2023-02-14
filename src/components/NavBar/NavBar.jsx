@@ -50,8 +50,8 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                <a href="#"><span>< FaLinkedinIn /></span></a>
-                <a href="#"><span><FaGithub /></span></a>
+                <a href="https://www.linkedin.com/in/esteban-zapata-henao/"><span>< FaLinkedinIn /></span></a>
+                <a href="https://github.com/esteban-zh"><span><FaGithub /></span></a>
             </div>
             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button className='vvd' href="#contact" onClick={() => console.log("conect button header")}>Contact me</button></Nav.Link>
           </span>

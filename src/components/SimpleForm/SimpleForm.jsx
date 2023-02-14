@@ -11,13 +11,13 @@ export const SimpleForm = ({ onValidated, subscribe, status, message }) => {
   
 
   const handleSubmit = (e) => {
-    e.preventDefaul();
+    e.preventDefault();
     email &&
-    email.indexOf("@") > -1 &&
-    onValidated({
-        EMAIL: email
-    })
-  }
+      email.indexOf("@") > -1 &&
+      onValidated({
+        EMAIL: email,
+      });
+  };
 
   const clearFields = () => {
     setEmail('');
