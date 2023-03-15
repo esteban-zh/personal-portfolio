@@ -39,7 +39,7 @@ export const Skills = () => {
                     <h2>
                         Skills
                     </h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p>Outstanding soft skills so as to work in a company and work in teams, besides knowledge in software development, stack MERN, MongoDB, Express, React.js, Node.js, Git and so on </p>
                     <Carousel responsive={responsive} infinite={true} className="skill-slider">
                         <div className='item'>
                             <span><FaHtml5  className='img' /></span>
