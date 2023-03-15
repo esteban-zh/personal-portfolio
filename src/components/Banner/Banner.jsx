@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaArrowCircleRight } from 'react-icons/fa';
 // import headerImg from "../assets/img/header-img.svg";
 import headerImg from "../../assets/img/photo-profile.jfif";
 import './styles.css'
@@ -12,18 +11,13 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [index, setIndex] = useState(1);
+  console.log("este es index ", index)
   const toRotate = [ "Web Developer", "Electronic Engineer"];
   const period = 1500;
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+  /* eslint-disable */
 
-    return () => { clearInterval(ticker) };
-  }, [text])
-
-  const tick = () => {
+  const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
@@ -46,7 +40,16 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  }) 
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+    tick()
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  }, [text, tick])
+
 
   return (
     <section className='banner' id='home'>
@@ -66,3 +69,4 @@ export const Banner = () => {
     </section>
   )
 }
+
