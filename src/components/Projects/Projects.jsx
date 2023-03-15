@@ -16,19 +16,19 @@ export const Projects = () => {
     {
       title: "Buggy and Bumper",
       description: "App rental cars, landing page using node.js, express, mongoDB, Mongo Atlas cluster, backend deployed in render server, frontend in React.js and deploy in netlify server.",
-      projectUrl:"https://main--candid-croissant-7be055.netlify.app/",
+      projectUrl:"https://cars-to-rental.netlify.app/",
       imgUrl: rentalCarsImg,
     },
     {
       title: "Yard sale",
       description: "React.js single page application(SPA), using custome Webpack settings. This store works on the client side and queries an API to fetch products.",
-      projectUrl:"https://extraordinary-crostata-113b03.netlify.app/",
+      projectUrl:"https://sale-shop.netlify.app/",
       imgUrl: yardSale,
     },
     {
       title: "tik-tok clone",
       description: "React.js application cloning the main views of tiktok application",
-      projectUrl:"https://zesty-crepe-6fc049.netlify.app/",
+      projectUrl:"https://tik-tak-clone.netlify.app/",
       imgUrl: tikTok,
     },
     {
@@ -45,8 +45,8 @@ export const Projects = () => {
     },
     {
       title: "Automation solutions",
-      description: "Web application with Firebase and React.js,  in order to take over each work made daily basis by the team of maintenance area in the Automation solutions company",
-      projectUrl:"https://main--sunny-beignet-216a45.netlify.app/",
+      description: "Web application with Firebase and React.js,  in order to take over each work made daily basis by the team of maintenance area in the Automation solutions company (login with email: ultimo@ultimo.com and password: 0987654 or create your own account",
+      projectUrl:"https://automation-solutions.netlify.app/",
       imgUrl: Automation,
     },
   ];
